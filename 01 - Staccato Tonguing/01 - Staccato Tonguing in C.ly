@@ -32,14 +32,31 @@ Fine = {
             copyright = "This work is licensed under a CC BY-SA 4.0 license."
             dedication = "openArbanProject"
             title = "Staccato Tonguing Study"
-            subtitle = "from PRACTICAL STUDIES for the CORNET (and TRUMPET)"
+            % subtitle = "from PRACTICAL STUDIES for the CORNET (and TRUMPET)"
+  }
+  
+  #(define-markup-list-command (paragraph layout props args) (markup-list?)
+  (interpret-markup-list layout props
+   (make-justified-lines-markup-list (cons (make-hspace-markup 2) args))))
+  
+  % Instructions
+  \markuplist { 
+    \override-lines #'(baseline-skip . 2.5) {
+      \paragraph {
+      This staccato study should be practised slowly at first, and also with very
+      even tonguing. After it has been mastered in slow tempo, begin to play it
+      faster. In fact, it should be played as quickly as possible without sacrificing
+      smoothness or clarity.
+      }
+    }
   }
   
   \score {
     \header { composer = "E.F. Goldman" }
     \layout { \context { \Score \remove "Bar_number_engraver" }}
     \relative c'
-    {
+    { 
+      
       \numericTimeSignature \time 4/4
       \key c \major
       c'16-.\mf c-. c-. c-. b-. b-. b-. b-. c-. c-. c-. c-. g-. g-. g-. g-. 
