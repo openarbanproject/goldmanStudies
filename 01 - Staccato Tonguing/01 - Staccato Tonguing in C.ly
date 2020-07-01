@@ -61,8 +61,9 @@ Fine = {
       \key c \major
       c'16-.\mf c-. c-. c-. b-. b-. b-. b-. c-. c-. c-. c-. g-. g-. g-. g-. 
       a-. b-. c-. d-. c-. b-. a-. b-. c-. g-. e'-. g,-. d'-. g,-. b-. g-.
-      c-"sempre staccato" c c c b b b b c c c c g g g g a b c d c b a b c g e' g, c8 r
-      d16 d d d g, g g g e' e e e g, g g g f' e d f e d c e d g, g g g g g g
+      c-. c-. c-. c-. b-. b-. b-. b-. c-. c-. c-. c-. g-. g-. g-. g-. 
+      a-. b-. c-. d-. c-. b-. a-. b-. c-. g-. e'-. g,-. c8-. r
+      d16-"sempre staccato" d d d g, g g g e' e e e g, g g g f' e d f e d c e d g, g g g g g g
       d' d d d g, g g g e' e e e g, g g g f' e d f e d c e d4 r16 g, a b
       c16 c c c b b b b c c c c g g g g a b c d c b a b c g e' g, d' g, b g
       c c c c b b b b c c c c g g g g a b c d c b a b c g e' g, c8 r \Fine

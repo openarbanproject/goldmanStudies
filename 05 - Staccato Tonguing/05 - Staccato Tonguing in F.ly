@@ -22,7 +22,23 @@
             copyright = "This work is licensed under a CC BY-SA 4.0 license."
             dedication = "openArbanProject"
             title = "Staccato Tonguing Study"
-            subtitle = "from PRACTICAL STUDIES for the CORNET (and TRUMPET)"
+           % subtitle = "from PRACTICAL STUDIES for the CORNET (and TRUMPET)"
+  }
+  
+  #(define-markup-list-command (paragraph layout props args) (markup-list?)
+  (interpret-markup-list layout props
+   (make-justified-lines-markup-list (cons (make-hspace-markup 2) args))))
+  
+  % Instructions
+  \markuplist { 
+    \override-lines #'(baseline-skip . 2.5) {
+      \paragraph {
+      This is another study that will help to improve the tonguing. Be careful to
+      play all eighth and sixteeth ntoes very staccato, and try to maintain the
+      same quality of tone throughout. A brilliant style is required for music of
+      this kind.
+      }
+    }
   }
   
   \score {
